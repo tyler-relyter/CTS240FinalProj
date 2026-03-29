@@ -1,0 +1,12 @@
+Resource Name,Type,Material Label,Initials,Group,Max.,Std. Rate,Ovt. Rate,Cost/Use,Accrue At,Base Calendar
+VP of Operations,Work,,VO,Executive,100%,$150.00/hr,$200.00/hr,$0.00,Prorated,Standard
+Facilities Director,Work,,FD,Operations,100%,$85.00/hr,$100.00/hr,$0.00,Prorated,Standard
+Construction Team,Work,,CT,Contractors,500%,$120.00/hr,$150.00/hr,$0.00,Prorated,Standard
+Painting Crew,Work,,PC,Contractors,300%,$60.00/hr,$90.00/hr,$0.00,Prorated,Standard
+HVAC Vendor,Work,,HVAC,Contractors,200%,$110.00/hr,$165.00/hr,$0.00,Prorated,Standard
+Electrician,Work,,E,Contractors,200%,$135.00/hr,$202.50/hr,$0.00,Prorated,Standard
+IT Networking Team,Work,,IT,Internal IT,400%,$95.00/hr,$120.00/hr,$0.00,Prorated,Standard
+DeskCo Installation Team,Work,,Desk,Vendor,300%,$50.00/hr,$75.00/hr,$0.00,Prorated,Standard
+New Office Furniture,Material,Desks,F,Materials,,-,-,$15000.00,Start,Standard
+Server Rack Hardware,Material,Servers,S,Materials,,-,-,$25000.00,Start,Standard
+Ethernet Cable Spools,Material,Boxes,C,Materials,,-,-,$1500.00,Start,Standard

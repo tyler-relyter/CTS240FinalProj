@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Intake Portal | HQ Build-Out</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            border-top: 5px solid #2b579a;
+        }
+        h1 {
+            color: #2b579a;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #444;
+            margin-top: 30px;
+            border-left: 4px solid #f39c12;
+            padding-left: 10px;
+        }
+        .alert-box {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border: 1px solid #ffeeba;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .email-thread {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .email-header {
+            font-size: 0.9em;
+            color: #666;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #2b579a;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 10px 5px 10px 0;
+        }
+        .download-btn:hover {
+            background: #1e3f70;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #2b579a;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Project Intake Portal: HQ Relocation & Build-Out</h1>
+    <p><strong>To:</strong> Lead Project Manager<br>
+    <strong>From:</strong> VP of Operations<br>
+    <strong>Date:</strong> October 1, 2026</p>
+    
+    <div class="alert-box">
+        <strong>CRITICAL DEADLINE:</strong> Our current lease expires on December 31st. The new 10,000 sq ft facility at 404 Innovation Drive must be completely built out, furnished, and online before the holiday break so staff can return to the office smoothly on January 4th.
+    </div>
+
+    <h2>1. The Objective</h2>
+    <p>We need you to build a master schedule in Microsoft Project. You must take the raw data provided by our vendors, establish the correct task dependencies, assign resources, input costs, and configure the working calendar.</p>
+
+    <h2>2. Project Constraints & Calendar Updates</h2>
+    <p>You must configure the Microsoft Project calendar to reflect the following constraints:</p>
+    <ul>
+        <li><strong>Standard Working Hours:</strong> Monday through Friday, 8:00 AM to 5:00 PM (1-hour lunch).</li>
+        <li><strong>Non-Working Days (Holidays):</strong> 
+            <ul>
+                <li>Thanksgiving Day (Nov 26)</li>
+                <li>Black Friday (Nov 27)</li>
+                <li>Company Winter Break (Dec 24 - Jan 1)</li>
+            </ul>
+        </li>
+        <li><strong>Resource Constraint:</strong> The IT Networking Team is completely unavailable from November 10th to November 14th due to mandatory off-site security training. Ensure their tasks do not schedule during this window.</li>
+    </ul>
+
+    <h2>3. Unstructured Dependencies (Email Chain)</h2>
+    <p><em>Please review the following email chain between department heads to deduce your task dependencies. Do not schedule tasks out of order.</em></p>
+
+    <div class="email-thread">
+        <div class="email-header">
+            <strong>From:</strong> Sarah Jenkins (Facilities Director)<br>
+            <strong>To:</strong> Project Management Team<br>
+            <strong>Subject:</strong> RE: Build-out Sequence
+        </div>
+        <p>Hi team, just a heads up on the sequencing for the new office. We absolutely cannot start the interior painting until the drywall framing and mudding are 100% complete. Once the paint is dry, the electricians can come in to install the light fixtures and floor outlets.</p>
+        <p>Also, please note that the furniture vendor (DeskCo) requires a 15-day lead time from the day we place the order to the day it arrives on site. We shouldn't place the order until the lease is officially signed.</p>
+    </div>
+
+    <div class="email-thread">
+        <div class="email-header">
+            <strong>From:</strong> Marcus Thorne (IT Director)<br>
+            <strong>To:</strong> Sarah Jenkins, Project Management Team<br>
+            <strong>Subject:</strong> RE: Build-out Sequence
+        </div>
+        <p>Sarah is right. From the IT side, my networking guys cannot pull the CAT6 ethernet cables through the walls until the electricians are completely finished with the floor outlets. Furthermore, we can't install the server racks in the IT closet until the HVAC team finishes the dedicated cooling unit in that room.</p>
+        <p>Finally, we can't deploy the desktop computers to the workstations until DeskCo finishes assembling the furniture.</p>
+    </div>
+
+    <h2>4. Resource & Cost Raw Data</h2>
+    <p>Download the raw data files below. Use the CSV data to build your WBS, assign the correct roles to each task, and input the hourly rates and fixed material costs into your MS Project Resource Sheet.</p>
+    
+    <!-- INSTRUCTOR NOTE: Update these href links to point to the actual Canvas file uploads -->
+    <a href="HQ_BuildOut_Tasks.csv" class="download-btn">⬇ Download Tasks (CSV)</a>
+    <a href="HQ_BuildOut_Resources.csv" class="download-btn">⬇ Download Resources (CSV)</a>
+
+    <h2>5. Deliverables Required</h2>
+    <p>Submit your final <code>.mpp</code> (Microsoft Project) file with the following complete:</p>
+    <ol>
+        <li>A properly indented Work Breakdown Structure (Phases: Planning, Construction, IT Infrastructure, Move-In).</li>
+        <li>All task durations and logical predecessors (dependencies) mapped based on the emails above.</li>
+        <li>The Project Calendar updated with all holidays and the IT training non-working days.</li>
+        <li>Resources added to the Resource Sheet (with standard rates and cost/use).</li>
+        <li>Resources accurately assigned to their respective tasks without overallocation.</li>
+    </ol>
+
+</div>
+
+</body>
+</html>

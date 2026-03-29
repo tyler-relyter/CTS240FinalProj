@@ -1,0 +1,13 @@
+Task Name,Duration (Days),Predecessors (Student Must Deduce),Resource Required
+Sign Lease Agreement,2,,VP of Operations
+Order Furniture & Desks (DeskCo),1,,Facilities Director
+Wait for Furniture Delivery (Lead Time),15,,(None - Lead Time/Lag)
+Install HVAC in Server Room,5,,HVAC Vendor
+Drywall Framing & Mudding,10,,Construction Team
+Interior Painting,3,,Painting Crew
+Electrical Wiring & Floor Outlets,7,,Electrician
+Install IT Server Racks,2,,IT Networking Team
+Pull CAT6 Ethernet Cables,4,,IT Networking Team
+Assemble Office Furniture,3,,DeskCo Installation Team
+Deploy Desktop Computers,5,,IT Networking Team
+Final Office Walkthrough,1,,VP of Operations
